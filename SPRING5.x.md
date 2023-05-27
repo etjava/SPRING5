@@ -5,7 +5,7 @@
 ```tex
 Spring 中文含义 春天
 发展历史：
-	2002年由悉尼大学音乐系博士Rod Johnson 退出了Spring框架的雏形 Interface21框架
+	2002年由悉尼大学音乐系博士Rod Johnson 推出了Spring框架的雏形 Interface21框架
 	2004年3月正式发布了Spring1.0版本
 理念：
 	使现有技术更加容易使用，Spring提供了很多框架的整合技术
@@ -29,9 +29,13 @@ Spring是免费开源的框架，是一个轻量级 非入侵式的框架
 Spring特点
 	IOC（控制反转）、AOP（面向切面编程）
 	支持事务的处理，对各种框架整合的支持
+	
+官方文档 1.4
+
+https://docs.spring.io/spring-framework/docs/5.2.23.RELEASE/spring-framework-reference/core.html#beans-c-namespace
 ```
 
-![image-20230416230308551](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230416230308551.png)
+![image-20230416230308551](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445610.png)
 
 ### Spring需要的依赖
 
@@ -88,7 +92,7 @@ Spring特点
 
 
 
-![image-20230416231015567](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230416231015567.png)
+![image-20230416231015567](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445621.png)
 
 ### 扩展
 
@@ -124,9 +128,9 @@ IOC 是Spring框架的核心内容 使用多种方式完美的实现了IOC
 
 控制反转理解图
 
-![image-20230417003106796](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417003106796.png)
+![image-20230417003106796](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445816.png)
 
-![image-20230417003312202](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417003312202.png)
+![image-20230417003312202](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445061.png)
 
 新建maven项目 并添加依赖
 
@@ -163,7 +167,7 @@ IOC 是Spring框架的核心内容 使用多种方式完美的实现了IOC
 
 选中项目 右键 -> New -> Module
 
-![image-20230416235044691](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230416235044691.png)
+![image-20230416235044691](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445722.png)
 
 ### UserDao
 
@@ -284,7 +288,7 @@ public class Test {
     }
 ```
 
- ![image-20230417002859270](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417002859270.png)
+ ![image-20230417002859270](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241009200.png)
 
 ## HelloWorld
 
@@ -300,9 +304,9 @@ public class Test {
 
 选中项目右键 -> New -> Project
 
-![image-20230417190205296](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417190205296.png)
+![image-20230417190205296](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241017326.png)
 
-![image-20230417190245842](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417190245842.png)
+![image-20230417190245842](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241016896.png)
 
 ### 新建实体类User
 
@@ -336,7 +340,7 @@ public class User {
 
 https://docs.spring.io/spring-framework/docs/5.2.23.RELEASE/spring-framework-reference/core.html#spring-core
 
-![image-20230417191459033](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417191459033.png)
+![image-20230417191459033](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241017078.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -410,7 +414,7 @@ User对象的属性值是怎么设置的？
 
 因为Spring框架继承了很多相关的类 帮我们处理了创建对象的流程
 
-![image-20230417193309279](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417193309279.png)
+![image-20230417193309279](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241026471.png)
 
 ### 进一步理解
 
@@ -552,7 +556,7 @@ public class Test2 {
 
 ```
 
-![image-20230417195739859](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417195739859.png)
+![image-20230417195739859](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445638.png)
 
 ## IOC创建对象的方式
 
@@ -566,7 +570,7 @@ public class Test2 {
 
 选中项目右键 New -> Module
 
-![image-20230417195923967](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417195923967.png)
+![image-20230417195923967](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241445037.png)
 
 ### 创建User实体类
 
@@ -639,11 +643,11 @@ Spring默认是使用无参的构造方法来创建对象
 
 如果我们将无参构造方法去掉之后 运行会直接报错 
 
-![image-20230417202727483](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417202727483.png)
+![image-20230417202727483](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241009531.png)
 
-![image-20230417202741966](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417202741966.png)
+![image-20230417202741966](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446555.png)
 
-![image-20230417202805339](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417202805339.png)
+![image-20230417202805339](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446833.png)
 
 #### 有参构造器如何使用
 
@@ -655,7 +659,7 @@ Spring给我们提供了三种方式可以使用有参构造器
 
 ##### 方式1 下标索引注入属性值
 
-![image-20230417203833484](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417203833484.png)
+![image-20230417203833484](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241009213.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -681,7 +685,7 @@ Spring给我们提供了三种方式可以使用有参构造器
 
 ##### 方式2 通过类型匹配有参构造方法
 
-![image-20230417203920213](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417203920213.png)
+![image-20230417203920213](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446740.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -712,9 +716,9 @@ Spring给我们提供了三种方式可以使用有参构造器
 </beans>
 ```
 
-##### 方式3[==常用==] 直接通过参数名方式来设置Bean
+##### 方式3[常用] 直接通过参数名方式来设置Bean
 
-![image-20230417204701039](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417204701039.png)
+![image-20230417204701039](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446497.png)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -763,8 +767,6 @@ package com.etjava.model;
 
 public class User2 {
     private String userName;
-
-
     public User2(){
         System.out.println("User2类的无参构造方法");
     }
@@ -844,7 +846,7 @@ public class Test {
 
 ```
 
-![image-20230417205545138](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417205545138.png)
+![image-20230417205545138](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241028466.png)
 
 运行结果可以看出 在Spring加载时就会初始化所有配置的bean
 
@@ -875,13 +877,13 @@ public class Test {
 
 
 
-![image-20230417205700573](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417205700573.png)
+![image-20230417205700573](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241028001.png)
 
 ## Spring 其他配置
 
 ### 新建模块
 
-![image-20230417210434686](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417210434686.png)
+![image-20230417210434686](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446697.png)
 
 #### 创建User实体类
 
@@ -948,7 +950,7 @@ public class Test {
 
 ```
 
-![image-20230417210930570](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417210930570.png)
+![image-20230417210930570](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241446638.png)
 
 #### bean
 
@@ -1043,13 +1045,13 @@ public class Test {
 
 ```
 
-![image-20230417212520744](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417212520744.png)
+![image-20230417212520744](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241447796.png)
 
 ## 依赖注入
 
 新建项目 spring_di
 
-![image-20230417212954907](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417212954907.png)
+![image-20230417212954907](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241447593.png)
 
 ### 创建User对象
 
@@ -1142,9 +1144,9 @@ public class Test {
 
 ```
 
-![image-20230417215443528](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230417215443528.png)
+![image-20230417215443528](https://cdn.jsdelivr.net/gh/etjava/TyporaPIC/img/202305241447899.png)
 
-### set注入[重点]
+### setter注入[重点]
 
 依赖   bean对象的创建依赖于容器
 
@@ -1284,8 +1286,7 @@ public class Student {
 
     <bean id="student" class="com.etjava.model.Student">
         <!--普通属性值注入 直接使用value赋值-->
-        <property name="stuName" value="HCL"/>
-        
+        <property name="stuName" value="tom"/>
     </bean>
 
 </beans>
@@ -1836,7 +1837,7 @@ xmlns:c="http://www.springframework.org/schema/c"
 
 官方案例
 
-c命名空间
+p命名空间
 
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -1854,7 +1855,7 @@ c命名空间
 </beans>
 ```
 
-p命名空间
+c命名空间
 
 ```xml
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -3418,16 +3419,2289 @@ Spring的IOC核心理念
 
 
 
-### 静态代理
+### 静态代理	
+
+#### 新建模块
+
+![image-20230419235702676](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230419235702676.png)
 
 ```
 角色分析
-	目的(抽象角色) 通常会使用接口或抽象类来解决
-	真实角色 被代理的角色
-	代理角色 代理真实的角色
-			代理了真实的角色后 我们通常会做一些附属操作
+	租房(抽象角色) 	通常会使用接口或抽象类来解决
+	出租房屋(真实角色) 被代理的角色
+	中介(代理角色) 	代理真实的角色
+			中介代理了真实的角色后 通常会做一些附属操作
 	客户 访问代理的人
+```
+
+##### 租房(抽象角色 - 接口)
+
+```java
+package com.etjava.model;
+
+// 租房
+public interface Rent {
+
+    public void rent();
+}
+
+```
+
+##### 房主(真实角色)
+
+```java
+package com.etjava.model;
+
+// 真实角色 - （房主）租房
+public class Host implements Rent{
+    @Override
+    public void rent() {
+        System.out.println("房主要出租房子");
+    }
+}
+
+```
+
+##### 中介(代理角色)
+
+```java
+package com.etjava.model;
+
+// 中介 - 代理
+public class Proxy implements Rent{
+    private Host host;
+
+    public Proxy() {
+    }
+
+    public Proxy(Host host) {
+        this.host = host;
+    }
+
+    // 帮助房主出租房子 代理后会有额外附属操作
+    @Override
+    public void rent() {
+        // 中介的附属操作
+        System.out.println("中介带你看房");
+        System.out.println("中介收取费用");
+        System.out.println("中介签租赁合同");
+        // 租房的核心方法
+        host.rent();
+    }
+}
+
+```
+
+客户(访问代理对象的人)
+
+```java
+package com.etjava.model;
+
+// 客户 - 租房的人
+public class Test {
+    public static void main(String[] args) {
+        // 直接找到房主去租房子
+//        Host host = new Host();
+//        host.rent();
+
+        // 直接找不到房主 可以找中介 通过中介去租房子 - 这就是代理模式
+        // 房主要出租房子 感觉太繁琐直接交给中介去处理
+        Host host = new Host();
+        // 代理 中介带你去找房子 但是代理角色一般会有一些附属操作
+        Proxy proxy = new Proxy(host);
+        // 不用面对房主 直接找中介即可
+        proxy.rent();
+
+    }
+}
+
+```
+
+代理模式的好处：
+
+可以使真实角色操作更加纯粹 不用去关注一些公共的业务
+
+公共业务交给代理角色 实现了业务分工
+
+公共业务发送扩展的时候方便集中管理
+
+缺点：一个真实角色就会产生一个代理角色 代码量会翻倍
+
+#### 加深理解
+
+![image-20230420213907345](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230420213907345.png)
+
+```
+实现用户增删改查操作
+    一般情况是我们创建一个User接口 然后编写增删改查的抽象方法
+    再编写一个User接口的实现类 ，当客户端调用的时候 直接通过User的实现类去调用即可
+    但这种方式存在一个弊端 那就是如果我们需要在已经存在的这些所有方法上添加日志记录功能 则需要修改原来的代	码
+	这种修改原有代码的方式 在公司中是大忌！
+
+那么如何实现在不改动任何原有代码的基础上增加日志功能呢？
+	使用代理模式
+		我们新建一个代理模式 然后使其代理User接口 并包含接口的实现类对象 
+		这样我们就可以在每个接口中的方法执行时添加日志功能且不会破坏之前的代码逻辑
+		
+下面采用代码理解
+抽象角色 - User接口
+真实角色 - User接口的实现类
+代理角色 - 代理User接口的类 需要包含User接口的实现类 否则无法调用接口中的抽象方法
+客户 - 访问代理的人
+```
+
+User接口
+
+```java
+package com.etjava.model2;
+
+// 抽象角色 - 用户信息的增删改查
+public interface UserService {
+    public void add();
+    public void delete();
+    public void update();
+    public void query();
+}
+
+```
+
+User接口实现类
+
+```java
+package com.etjava.model2;
+
+// 真实角色 - 对用户进行增删改查
+public class UserServiceImpl implements UserService{
+
+    @Override
+    public void add() {
+//        System.out.println("使用了add方法");// 手动给每个方法添加日志功能 不可取 应采用代理模式
+        System.out.println("添加了一个用户");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("删除了一个用户");
+    }
+
+    @Override
+    public void update() {
+        System.out.println("修改了一个用户");
+    }
+
+    @Override
+    public void query() {
+        System.out.println("查询了一个用户");
+    }
+}
+
+```
+
+Proxy - 代理User接口的类
+
+```java
+package com.etjava.model2;
+
+public class UserServiceProxy implements UserService{
+
+    private UserService userService;
 	
+    public UserServiceProxy(UserService userService) {
+        this.userService = userService;
+    }
+
+    @Override
+    public void add() {
+        log("add");
+        userService.add();
+    }
+
+    @Override
+    public void delete() {
+        log("delete");
+        userService.delete();
+    }
+
+    @Override
+    public void update() {
+        log("update");
+        userService.update();
+    }
+
+    @Override
+    public void query() {
+        log("query");
+        userService.query();
+    }
+
+    private void log(String msg){
+        System.out.println("使用了"+msg+"方法");
+    }
+}
+
+```
+
+客户 - 访问代理的人
+
+```java
+package com.etjava.model2;
+
+public class Test {
+    public static void main(String[] args) {
+        UserService userService = new UserServiceImpl();
+        //userService.add();// 如果需要在调用方法前添加日志记录 这种方式涉及到修改原业务 不推荐
+
+        UserServiceProxy proxy = new UserServiceProxy(userService);
+        proxy.add();
+        proxy.query();
+    }
+}
+
+```
+
+![image-20230420212446624](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230420212446624.png)
+
+### 动态代理
+
+```
+动态代理与静态代理一样 都是用来代理真实对象的
+静态代理是我们自己编写的 ，每一个真实的角色都要分配(创建)一个代理对象 这种方式会导致代码量翻倍 开发效率降低
+动态代理是动态生成的 不需要我们手动去写 我们只需要通过配置实现即可
+动态代理分为两大类
+	基于接口 - JDK提供的动态代理[原生]
+	基于类 - cglib / javassist
+		javassist
+			东京工业大学的数学和计算机科学系的 Shigeru Chiba （千叶 滋）所创建的。
+			它已加入了开放源代码JBoss 应用服务器项目，
+			通过使用Javassist对字节码操作为JBoss实现动态"AOP"框架
+            其主要的优点，在于简单，而且快速。直接使用java编码的形式，
+            	而不需要了解虚拟机指令，就能动态改变类的结构，或者动态生成类
+            	
+动态代理常用的两个类
+	Proxy(代理)、InvocationHandler（调用处理程序）
+	
+	
+	InvocationHandler
+		InvocationHandler是reflect包下的
+		InvocationHandler是代理实例的调用处理程序实现的接口
+			每个代理实例都有一个关联的调用程序处理 
+			当在代理实例上调用方法时 方法调用将被分派到其调用处理程序的invoke方法上
+			
+	InvocationHandler调用处理程序并返回结果
+
+	Proxy 是生成动态代理实例的
+```
+
+#### 新建模块
+
+![image-20230420222000716](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230420222000716.png)
+
+#### 普通动态代理
+
+只代理一个接口 类似静态代理
+
+##### 抽象角色 Rent（租房接口）
+
+```java
+package com.etjava;
+
+// 租房
+public interface Rent {
+
+    public void rent();
+}
+
+```
+
+##### 真实角色 Host（房主）
+
+```java
+package com.etjava;
+
+
+// 真实角色 - （房主）租房
+public class Host implements Rent {
+    @Override
+    public void rent() {
+        System.out.println("房主要出租房子");
+    }
+}
+
+```
+
+##### 代理角色
+
+```java
+package com.etjava;
+
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+// 自动生成代理的类
+public class ProxyInvocationHandler implements InvocationHandler {
+
+    private Rent rent;
+
+    public void setRent(Rent rent) {
+        this.rent = rent;
+    }
+
+    // 生成代理的类
+    public Object getProxy(){
+        /*
+        newProxyInstance 生成代理对象
+        方法参数解释
+        ClassLoader loader,   当前类的类加载器
+        Class<?>[] interfaces, 被代理的抽象角色 - 通常是接口(被代理的接口)
+        InvocationHandler h 代理处理程序本身 即 this
+         */
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(),rent.getClass().getInterfaces(),this );
+    }
+
+    // 处理代理实例 并返回处理结果
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        /*
+            invoke(rent,args);
+            参数 1 需要执行哪个方法
+            参数2 执行的方法需要的参数
+
+            动态代理的机制就是使用反射机制实现
+         */
+        return method.invoke(rent,args);
+    }
+
+
+}
+
+```
+
+##### 测试
+
+```java
+package com.etjava;
+
+
+public class Test2 {
+    public static void main(String[] args) {
+        // 真实角色
+        Host host = new Host();
+        // 代理角色 - 需要动态创建
+        ProxyInvocationHandler pih = new ProxyInvocationHandler();
+        // 通过调用程序处理对象(InvocationHandler)来处理我们要调用的接口对象
+        pih.setRent(host);
+        // 获取代理对象 注意 获取的是接口对象
+        Rent proxy = (Rent) pih.getProxy();
+        // 执行代理方法
+        proxy.rent();
+    }
+}
+
+```
+
+通用动态代理
+
+###### 抽象角色 UserService
+
+```java
+package com.etjava.proxy;
+
+// 抽象角色 - 用户信息的增删改查
+public interface UserService {
+    public void add();
+    public void delete();
+    public void update();
+    public void query();
+}
+
+```
+
+##### 真实角色 UserServiceImpl
+
+```java
+package com.etjava.proxy;
+
+// 真实角色 - 对用户进行增删改查
+public class UserServiceImpl implements UserService {
+
+    @Override
+    public void add() {
+//        System.out.println("使用了add方法");// 手动给每个方法添加日志功能 不可取 应采用代理模式
+        System.out.println("添加了一个用户");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("删除了一个用户");
+    }
+
+    @Override
+    public void update() {
+        System.out.println("修改了一个用户");
+    }
+
+    @Override
+    public void query() {
+        System.out.println("查询了一个用户");
+    }
+}
+
+```
+
+##### 代理角色 动态代理
+
+```java
+package com.etjava.proxy;
+
+
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+// 通用的代理类
+// 自动生成代理的类
+public class ProxyInvocationHandler implements InvocationHandler {
+
+    private Object target;
+
+    public void setTarget(Object target) {
+        this.target = target;
+    }
+
+    // 生成代理的类
+    public Object getProxy(){
+        /*
+        newProxyInstance 生成代理对象
+        方法参数解释
+        ClassLoader loader,   当前类的类加载器
+        Class<?>[] interfaces, 被代理的抽象角色 - 通常是接口(被代理的接口)
+        InvocationHandler h 代理处理程序本身 即 this
+         */
+        return Proxy.newProxyInstance(this.getClass().getClassLoader(),target.getClass().getInterfaces(),this );
+    }
+
+    // 处理代理实例 并返回处理结果
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+        // 添加日志记录
+        log(method.getName());
+        /*
+            invoke(rent,args);
+            参数 1 需要执行哪个方法
+            参数2 执行的方法需要的参数
+
+            动态代理的机制就是使用反射机制实现
+         */
+        return method.invoke(target,args);
+    }
+
+
+    private void log(String msg){
+        System.out.println("执行了"+msg+"方法");
+    }
+}
+
+```
+
+##### 测试
+
+```java
+package com.etjava.proxy;
+
+
+import com.etjava.Host;
+import com.etjava.Rent;
+
+public class Test {
+    public static void main(String[] args) {
+        // 真实角色
+        UserServiceImpl userService = new UserServiceImpl();
+        // 代理角色
+        ProxyInvocationHandler pih = new ProxyInvocationHandler();
+        // 设置要代理的对象
+        pih.setTarget(userService);
+        // 获取代理对象 - 返回的代理对象是接口或抽象类 不能是普通类
+        UserService proxy = (UserService) pih.getProxy();
+        proxy.query();
+
+        // 测试代理Host 租房业务
+        Host host = new Host();
+        pih.setTarget(host);
+        Rent proxy1 = (Rent)pih.getProxy();
+        proxy1.rent();
+
+    }
+}
+
+```
+
+#### 总结
+
+```
+动态代理的好处
+	可以使真实角色的操作更加纯粹，不用去关注一直公共的业务
+	公共业务交给代理角色 实现了业务分工
+	公共业务发生扩展的时候 发布集中管理
+	一个代理类代理一个接口 一般应对的就是一类业务
+	一个动态代理可以代理多个类，只要是实现了同一个接口即可
+```
+
+## AOP
+
+### 描述
+
+```
+什么是AOP
+AOP （Aspet Oriented Programming） 面向切面编程，通过预编译方式和运行期动态代理实现程序功能统一维护的一种技术，AOP是OOP的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容，属于函数式编程的一种衍生泛型，我们利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率
+```
+
+![image-20230422142851847](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422142851847.png)
+
+### AOP的作用
+
+```
+AOP在Spring中的作用
+提供声明式事务，允许用户自定义切面
+	横切关注点： - 【相当于描述信息】
+		能够跨越应用程序多个模块的方法或功能，即是与我们业务逻辑无关的 但又是我们需要关注的部分，
+		就是横切关注点，如日志，安全，缓存，事务等
+    切面(ASPECT) - 【相当于创建一个Log类】
+    	横切关注点模块化的一个特殊对象 - 他就是一个类
+    通知(Advice) - 【相当于Log中的方法】
+    	切面必须要完成的工作 即 他是类中的一个方法
+    目标(Target) - 【相当于被代理的对象】
+    	被通知对象
+    代理(Proxy) - 【相当于获取被代理的对象 - 生成代理类】
+    	向目标对象应用通知之后 创建的对象(返回的对象)
+    切入点(PointCut) - 【与连接点相当于调用invoke方法】
+    	切面通知执行的"位置"的定义 
+    连接点(JoinPioint)
+    	与切入点匹配的执行点
+```
+
+![image-20230422143623938](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422143623938.png)
+
+### 横切点
+
+SpringAOP中通过Advice定义横切逻辑支持5种类型
+
+| 通知类型 | 连接点               | 实现接口                                         |
+| -------- | -------------------- | ------------------------------------------------ |
+| 前置通知 | 方法执行前           | org.springframework.aop.MethodBeforeAdvice       |
+| 后置通知 | 方法执行后           | org.springframework.aop.AfterReturningAdvice     |
+| 环绕通知 | 方法前后             | org.aoplliance.intercept.MethodInterceptor       |
+| 异常抛出 | 方法抛出异常         | org.springframework.aop.ThrowsAdvice             |
+| 引用通知 | 类种添加新的方法属性 | org.springframework.aop.IntrodductionInterceptor |
+
+### AOP HelloWorld
+
+#### AOP的依赖
+
+```xml
+<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
+<dependency>
+    <groupId>org.aspectj</groupId>
+    <artifactId>aspectjweaver</artifactId>
+    <version>1.9.5</version>
+</dependency>
+
+```
+
+#### 新建模块
+
+![image-20230422162430285](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422162430285.png)
+
+
+
+
+
+#### 需求
+
+在对用户信息做增删改查操作时 使用SpringAOP方式动态织入日志功能
+
+- 在每个方法执行之前或之后添加日记记录
+
+#### UserService接口
+
+抽象角色
+
+```java
+package com.etjava.service;
+
+public interface UserSerice {
+    public void add();
+    public void delete();
+    public void modify();
+    public void query();
+}
+```
+
+#### UserServiceImpl实现类
+
+真实角色
+
+```java
+package com.etjava.service;
+
+public class UserServiceImpl implements UserSerice{
+    @Override
+    public void add() {
+        System.out.println("添加用户信息");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("删除用户信息");
+    }
+
+    @Override
+    public void modify() {
+        System.out.println("修改用户信息");
+    }
+
+    @Override
+    public void query() {
+        System.out.println("查询用户信息");
+    }
+}
+
+```
+
+#### 织入方式1 Spring API接口
+
+使用spring的原生接口实现
+
+前置通知 实现MethodBeforeAdvice接口
+
+后置通知 实现AfterReturningAdvice接口
+
+##### 前置通知 MethodBeforeAdvice
+
+```java
+package com.etjava.log;
+
+import org.springframework.aop.MethodBeforeAdvice;
+
+import java.lang.reflect.Method;
+
+// 前置通知
+public class Logs implements MethodBeforeAdvice {
+    @Override
+    /*
+    参数解释
+        method 要执行的方法
+        args 执行方法时可能需要的参数
+        target 目标对象 - 要被执行的对象
+     */
+    public void before(Method method, Object[] args, Object target) throws Throwable {
+        System.out.println(target.getClass().getName()+"的"+method.getName()+"方法 被执行了");
+    }
+}
+
+```
+
+##### 后置通知 AfterReturningAdvice
+
+```java
+package com.etjava.log;
+
+
+import org.springframework.aop.AfterReturningAdvice;
+
+import java.lang.reflect.Method;
+
+// 后置通知
+public class AfterLogs implements AfterReturningAdvice {
+
+    /*
+    参数解释
+        returnValue 返回值
+        method 要执行的方法
+        args 执行方法时可能需要的参数
+        target 目标对象 - 要被执行的对象
+     */
+    @Override
+    public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+        System.out.println("执行了"+method.getName()+"方法 其返回结果为"+returnValue);
+    }
+}
+
+```
+
+##### spring配置文件
+
+配置Bean 然后在配置AOP切面
+
+步骤
+
+​	导入AOP的约束
+
+​	xmlns:aop="http://www.springframework.org/schema/aop"
+
+​	xsi:schemaLocation="http://www.springframework.org/schema/beans
+​        https://www.springframework.org/schema/beans/spring-beans.xsd
+​        http://www.springframework.org/schema/aop
+​        https://www.springframework.org/schema/aop/spring-aop.xsd"
+
+​	注册bean
+
+​	定义切点
+
+​	执行切入
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userService" class="com.etjava.service.UserServiceImpl"/>
+    <bean id="log" class="com.etjava.log.Logs"/>
+    <bean id="afterlog" class="com.etjava.log.AfterLogs"/>
+
+    <!--配置AOP切面 方式1 Spring API-->
+    <aop:config>
+        <!--定义切入点
+        pointcut 切入点
+        id 属性名字 随便写
+        expression 表达式
+            参数
+                execution(要执行的位置)
+                    *       *           *   *   *   *
+                    public 访问修饰符  返回值 类名 方法名 参数
+                * com.etjava.service.UserServiceImpl.*(..)
+                第一个* 表示public修饰符
+                第二个 com.etjava.service.UserServiceImpl 表示要对哪个类进行切入
+                第三个* 表示该类下的所有方法
+                第四个.. 表示任意参数
+        -->
+        <aop:pointcut id="pointcut" expression="execution(* com.etjava.service.UserServiceImpl.*(..))"/>
+        <!--执行环绕
+            advisor 执行环绕
+            advice-ref="log" 给哪个bean进行切入
+            pointcut-ref="pointcut" 切入后需要执行的操作
+        -->
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>
+    </aop:config>
+</beans>
+```
+
+##### 测试
+
+```java
+package com.etjava;
+
+import com.etjava.service.UserSerice;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        UserSerice userService = context.getBean("userService", UserSerice.class);
+        userService.add();
+        userService.delete();
+        userService.modify();
+        userService.query();
+    }
+}
+
+```
+
+![image-20230422170214718](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422170214718.png)
+
+#### 方式2 自定义类实现AOP
+
+主要是切面实现
+
+先引入自定义的切入类 然后在定义切入点 最后配置通知(需要对哪个类的哪个或哪些方法进行切入)
+
+##### UserService接口
+
+```java
+package com.etjava.service;
+
+public interface UserSerice {
+    public void add();
+    public void delete();
+    public void modify();
+    public void query();
+}
+
+```
+
+##### UserServiceImpl实现类
+
+```java
+package com.etjava.service;
+
+public class UserServiceImpl implements UserSerice{
+    @Override
+    public void add() {
+        System.out.println("添加用户信息");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("删除用户信息");
+    }
+
+    @Override
+    public void modify() {
+        System.out.println("修改用户信息");
+    }
+
+    @Override
+    public void query() {
+        System.out.println("查询用户信息");
+    }
+}
+
+```
+
+##### 自定义切入点类
+
+```java
+package com.etjava;
+
+// 自定义切入点类
+public class DIYPointCut {
+    public void before(){
+        System.out.println("======方法执行前======");
+    }
+    public void after(){
+        System.out.println("======方法执行后======");
+    }
+}
+
+```
+
+##### spring配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userService" class="com.etjava.service.UserServiceImpl"/>
+    <bean id="log" class="com.etjava.log.Logs"/>
+    <bean id="afterlog" class="com.etjava.log.AfterLogs"/>
+
+    <!--配置AOP切面 方式1 Spring API-->
+    <!--<aop:config>
+        &lt;!&ndash;定义切入点
+        pointcut 切入点
+        id 属性名字 随便写
+        expression 表达式
+            参数
+                execution(要执行的位置)
+                    *       *           *   *   *   *
+                    public 访问修饰符  返回值 类名 方法名 参数
+                * com.etjava.service.UserServiceImpl.*(..)
+                第一个* 表示public修饰符
+                第二个 com.etjava.service.UserServiceImpl 表示要对哪个类进行切入
+                第三个* 表示该类下的所有方法
+                第四个.. 表示任意参数
+        &ndash;&gt;
+        <aop:pointcut id="pointcut" expression="execution(* com.etjava.service.UserServiceImpl.*(..))"/>
+        &lt;!&ndash;执行环绕
+            advisor 执行环绕
+            advice-ref="log" 给哪个bean进行切入
+            pointcut-ref="pointcut" 切入后需要执行的操作
+        &ndash;&gt;
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>
+    </aop:config>-->
+
+    <!--方式2 自定义切入点类-->
+    <!--注册自定义切入点类-->
+    <bean id="diy" class="com.etjava.DIYPointCut"/>
+    <!--配置AOP切面-->
+    <aop:config>
+        <!--
+            aspect 自定义切面
+            ref 要引用的自定义类
+        -->
+        <aop:aspect ref="diy" >
+            <!--切入点-->
+            <aop:pointcut id="point" expression="execution(* com.etjava.service.UserServiceImpl.*(..))"/>
+            <!--通知
+                method 要将哪个方法切入进来
+                pointcut-ref="point" 使用哪个切入点
+            -->
+            <aop:before method="before" pointcut-ref="point"/>
+            <aop:after method="after" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>
+</beans>
+```
+
+##### 测试
+
+```java
+package com.etjava;
+
+import com.etjava.service.UserSerice;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        UserSerice userService = context.getBean("userService", UserSerice.class);
+        userService.add();
+        userService.delete();
+        userService.modify();
+        userService.query();
+    }
+}
+
+```
+
+![image-20230422172832948](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422172832948.png)
+
+#### 方式3 注解实现切入
+
+##### UserService接口
+
+```java
+package com.etjava.service;
+
+public interface UserSerice {
+    public void add();
+    public void delete();
+    public void modify();
+    public void query();
+}
+
+```
+
+##### UserServiceImpl实现类
+
+```java
+package com.etjava.service;
+
+public class UserServiceImpl implements UserSerice{
+    @Override
+    public void add() {
+        System.out.println("添加用户信息");
+    }
+
+    @Override
+    public void delete() {
+        System.out.println("删除用户信息");
+    }
+
+    @Override
+    public void modify() {
+        System.out.println("修改用户信息");
+    }
+
+    @Override
+    public void query() {
+        System.out.println("查询用户信息");
+    }
+}
+
+```
+
+##### 注解方式实现AOP切入
+
+```java
+package com.etjava;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.Signature;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+// 注解方式实现AOP
+@Aspect // 标注这是一个切面
+public class AnnocationPointCut {
+
+    // 定义切点和通知
+    // 方法执行前切入
+    @Before("execution(* com.etjava.service.UserServiceImpl.*(..))")
+    public void before1(){
+        System.out.println("方法执行前------------");
+    }
+    // 后置通知
+    @After("execution(* com.etjava.service.UserServiceImpl.*(..))")
+    public void after1(){
+        System.out.println("方法执行后------------");
+    }
+
+    // 环绕通知
+    @Around("execution(* com.etjava.service.UserServiceImpl.*(..))")
+    public void around(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("环绕前");
+        // 执行方法 - 要给哪个方法进行切入的方法
+        Object proceed = joinPoint.proceed();
+        System.out.println("环绕后");
+        // 获取签名-执行的是哪个方法
+        Signature signature = joinPoint.getSignature();
+        System.out.println(signature);
+    }
+}
+
+```
+
+##### Spring配置文件
+
+配置文件中需要将自定义的注解注入到spring中并开启aop的注解支持
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注册bean-->
+    <bean id="userService" class="com.etjava.service.UserServiceImpl"/>
+    <bean id="log" class="com.etjava.log.Logs"/>
+    <bean id="afterlog" class="com.etjava.log.AfterLogs"/>
+
+    <!--配置AOP切面 方式1 Spring API-->
+    <!--<aop:config>
+        &lt;!&ndash;定义切入点
+        pointcut 切入点
+        id 属性名字 随便写
+        expression 表达式
+            参数
+                execution(要执行的位置)
+                    *       *           *   *   *   *
+                    public 访问修饰符  返回值 类名 方法名 参数
+                * com.etjava.service.UserServiceImpl.*(..)
+                第一个* 表示public修饰符
+                第二个 com.etjava.service.UserServiceImpl 表示要对哪个类进行切入
+                第三个* 表示该类下的所有方法
+                第四个.. 表示任意参数
+        &ndash;&gt;
+        <aop:pointcut id="pointcut" expression="execution(* com.etjava.service.UserServiceImpl.*(..))"/>
+        &lt;!&ndash;执行环绕
+            advisor 执行环绕
+            advice-ref="log" 给哪个bean进行切入
+            pointcut-ref="pointcut" 切入后需要执行的操作
+        &ndash;&gt;
+        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>
+        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>
+    </aop:config>-->
+
+    <!--方式2 自定义切入点类-->
+    <!--注册自定义切入点类-->
+    <bean id="diy" class="com.etjava.DIYPointCut"/>
+    <!--配置AOP切面-->
+    <!--<aop:config>
+        &lt;!&ndash;
+            aspect 自定义切面
+            ref 要引用的自定义类
+        &ndash;&gt;
+        <aop:aspect ref="diy" >
+            &lt;!&ndash;切入点&ndash;&gt;
+            <aop:pointcut id="point" expression="execution(* com.etjava.service.UserServiceImpl.*(..))"/>
+            &lt;!&ndash;通知
+                method 要将哪个方法切入进来
+                pointcut-ref="point" 使用哪个切入点
+            &ndash;&gt;
+            <aop:before method="before" pointcut-ref="point"/>
+            <aop:before method="after" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>-->
+
+
+    <!--方式3 使用注解实现AOP切面-->
+    <bean id="annocationPointCut" class="com.etjava.AnnocationPointCut"/>
+    <!--开启AOP的注解支持
+        AOP 代理模式有两种
+        基于JDK(默认)
+            proxy-target-class="false" 表示使用JDK
+        基于cglib
+            proxy-target-class="true"
+    -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+</beans>
+```
+
+##### 测试
+
+```java
+package com.etjava;
+
+import com.etjava.service.UserSerice;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+    public static void main(String[] args) {
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        UserSerice userService = context.getBean("userService", UserSerice.class);
+        userService.add();
+        userService.delete();
+        userService.modify();
+        userService.query();
+    }
+}
+
+```
+
+![image-20230422175406239](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422175406239.png)
+
+
+
+## Spring整合MyBatis
+
+```
+整合步骤
+	导入相关依赖包
+	mybatis,mysql驱动，spring相关，aop织入相关，mybatis-spring整合spring相关
+	编写配置文件
+	测试
+mybatis整合spring官方文档
+http://mybatis.org/spring/
+```
+
+#### 回顾mybatis的使用
+
+##### mybatis依赖
+
+```xml
+<dependency>
+    <groupId>org.mybatis</groupId>
+    <artifactId>mybatis</artifactId>
+    <version>3.5.9</version>
+</dependency>
+```
+
+##### 新建实体类user
+
+```Java
+package com.etjava.model;
+
+import lombok.Data;
+
+@Data
+public class User {
+    private Integer id;
+    private String stuName;
+    private Integer age;
+}
+
+```
+
+##### 新建mybatis的配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties"/>
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.etjava.model"/>
+    </typeAliases>
+    <!-- 配置环境 例如 development开发环境-->
+    <environments default="development">
+        <environment id="development">
+            <!-- 事务管理 -->
+            <transactionManager type="JDBC"/>
+            <!-- 数据源 POOLED连接池 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClassName}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!-- 映射器 映射实体类与数据库SQL -->
+    <mappers>
+        <package name="com/etjava/mapper"/>
+    </mappers>
+</configuration>
+```
+
+##### 测试
+
+```java
+package com.etjava.test;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+public class TestMyBaits {
+
+    @Test
+    public void test1() throws IOException {
+        // 读取mybatis配置文件
+        InputStream is = Resources.getResourceAsStream("mybatis-config.xml");
+        // 创建session工厂
+        SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(is);
+        // 获取sqlSession 自动提交 传入true
+        SqlSession sqlSession = sessionFactory.openSession(true);
+        // 获取接口映射
+        UserMapper mapper = sqlSession.getMapper(UserMapper.class);
+        List<User> list = mapper.findUser();
+        for (User u: list) {
+            System.out.println(u);
+        }
+
+    }
+}
+
+```
+
+![image-20230422194303872](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422194303872.png)
+
+#### MyBatis-Spring整合
+
+```
+整合步骤
+    创建实体类
+    创建对应的接口
+    创建对应的SQL映射文件
+    配置mybatis配置文件
+    配置spring整合mybatis的配置文件
+    还需要写接口的实现类并注入到spring中
+    最后通过spring进行测试
+
+```
+
+
+
+##### 新建模块
+
+![image-20230422180157457](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422180157457.png)
+
+##### 添加依赖
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring5_1</artifactId>
+        <groupId>com.etjava</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring_mybatis</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.46</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.9</version>
+        </dependency>
+        <!--spring支持 包含spring core  spring context等-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!--spring连接数据库 需要spring-jdbc包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!--aop织入包-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.5</version>
+        </dependency>
+        <!--mybatis与spring整合包
+            mybatis 3.5以上 使用2.0+
+            3.5以下使用1.3
+        -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+</project>
+```
+
+##### 创建实体类
+
+```java
+package com.etjava.model;
+
+import lombok.Data;
+
+@Data
+public class User {
+    private Integer id;
+    private String stuName;
+    private Integer age;
+}
+
+```
+
+
+
+##### 创建UserMapper接口
+
+```java
+package com.etjava.mapper;
+
+import com.etjava.model.User;
+
+import java.util.List;
+
+public interface UserMapper {
+    public List<User> findUser();
+}
+
+```
+
+##### 实现方式1 创建UserMapper实现类
+
+使用spring提供的SqlSessionTemplate 
+
+由于Spring管理会将所有的对象都注册为bean，我们在操作数据库时使用的sqlSession也由Spring提供了
+
+SqlSessionTemplate 因此需要注入到具体的类中进行使用
+
+```java
+package com.etjava.mapper.impl;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.mybatis.spring.SqlSessionTemplate;
+
+import java.util.List;
+
+public class UserMapperImpl implements UserMapper {
+
+    // 我们之前所有的操作都是使用sqlSession 整合Sprign后都是使用SqlSessionTemplate
+    private SqlSessionTemplate sqlSession;
+
+
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
+        this.sqlSession = sqlSession;
+    }
+
+    @Override
+    public List<User> findUser() {
+        UserMapper u = sqlSession.getMapper(UserMapper.class);
+        return u.findUser();
+    }
+}
+
+```
+
+##### 实现方式2 UserMapperImpl2
+
+使用SqlSessionDaoSupport替代SqlSessionTemplate
+
+ ```java
+ package com.etjava.mapper.impl;
+ 
+ import com.etjava.mapper.UserMapper;
+ import com.etjava.model.User;
+ import org.apache.ibatis.session.SqlSession;
+ import org.mybatis.spring.SqlSessionTemplate;
+ import org.mybatis.spring.support.SqlSessionDaoSupport;
+ 
+ import java.util.List;
+ 
+ public class UserMapperImpl2 extends SqlSessionDaoSupport implements UserMapper {
+     @Override
+     public List<User> findUser() {
+         // SqlSessionDaoSupport提供的可以直接获取sqlSession
+         SqlSession sqlSession = getSqlSession();
+         UserMapper u = sqlSession.getMapper(UserMapper.class);
+         return u.findUser();
+     }
+ }
+ 
+ ```
+
+
+
+##### 编写配置文件
+
+###### mybatis
+
+注释掉的内容都由spring来管理了
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+   <!-- <properties resource="jdbc.properties"/>-->
+    <!-- 别名 -->
+    <typeAliases>
+        <package name="com.etjava.model"/>
+    </typeAliases>
+    <!-- 配置环境 例如 development开发环境-->
+    <!--<environments default="development">
+        <environment id="development">
+            &lt;!&ndash; 事务管理 &ndash;&gt;
+            <transactionManager type="JDBC"/>
+            &lt;!&ndash; 数据源 POOLED连接池 &ndash;&gt;
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driverClassName}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+    <!-- 映射器 映射实体类与数据库SQL -->
+   <!-- <mappers>
+        <package name="com/etjava/mapper"/>
+    </mappers>-->
+</configuration>
+```
+
+###### spring的配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--配置数据源  使用spring连接数据库 替换mybatis连接数据库
+        这里使用spring提供的jdbc
+        org.springframework.jdbc.datasource.DriverManagerDataSource
+    -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--注入连接属性-->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_mybatis?characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Karen@1234"/>
+    </bean>
+
+    <!--配置连接工厂  sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--绑定mybatis配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--配置mybatis的映射文件扫描-->
+        <property name="mapperLocations" value="classpath*:com/etjava/mapper/**/*.xml"/>
+    </bean>
+
+    <!--注入sqlSession   SqlSessionTemplate是spring提供的 用来连接数据库-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--只能使用构造器方式注入-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!--方式1 测试使用spring提供的sqlSessionTemplate-->
+    <bean id="userMapper" class="com.etjava.mapper.impl.UserMapperImpl">
+        <!--setter注入-->
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+    
+    <!--方式2 测试使用SqlSessionDaoSupport 提供的直接获取sqlSession-->
+    <bean id="userMapper2" class="com.etjava.mapper.impl.UserMapperImpl2">
+        <!--必须要注入sqlSessionFactory-->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>
+```
+
+##### 测试
+
+```java
+package com.etjava.test;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.mapper.impl.UserMapperImpl;
+import com.etjava.model.User;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+public class TestMyBaits {
+    @Test
+    public void test2(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapperImpl userMapper = context.getBean("userMapper", UserMapperImpl.class);
+        List<User> list = userMapper.findUser();
+        for (User user : list) {
+            System.out.println(user);
+        }
+    }
+}
+
+```
+
+![image-20230422202005620](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422202005620.png)
+
+
+
+##### Spring配置拆分【扩展】
+
+我们可以将Spring的配置文件拆为mybatis和Spring自身的 ，只需要在总的配置文件中引用即可
+
+###### spring-mybatis.xml
+
+只负责配置数据库方面
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!---->
+
+    <!--配置数据源  使用spring连接数据库 替换mybatis连接数据库
+        这里使用spring提供的jdbc
+        org.springframework.jdbc.datasource.DriverManagerDataSource
+    -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--注入连接属性-->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_mybatis?characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Karen@1234"/>
+    </bean>
+
+    <!--配置连接工厂  sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--绑定mybatis配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--配置mybatis的映射文件扫描-->
+        <property name="mapperLocations" value="classpath*:com/etjava/mapper/**/*.xml"/>
+    </bean>
+
+    <!--注入sqlSession   SqlSessionTemplate是spring提供的 用来连接数据库-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--只能使用构造器方式注入-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+    
+    
+</beans>
+```
+
+###### applicationContext.xml
+
+spring的总配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--spring总配置文件 只需要注册bean就可以-->
+    <!--引入其他配置文件-->
+    <import resource="spring-mybatis.xml"/>
+    <!--方式1 测试使用spring提供的sqlSessionTemplate-->
+    <bean id="userMapper" class="com.etjava.mapper.impl.UserMapperImpl">
+        <!--setter注入-->
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+    
+    <!--方式2 测试使用SqlSessionDaoSupport 提供的直接获取sqlSession-->
+    <bean id="userMapper2" class="com.etjava.mapper.impl.UserMapperImpl2">
+        <!--必须要注入sqlSessionFactory-->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>
+```
+
+###### 测试
+
+```java
+package com.etjava.test;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.mapper.impl.UserMapperImpl;
+import com.etjava.model.User;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.jupiter.api.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.List;
+
+public class TestMyBaits {
+
+    @Test
+    public void test2(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapperImpl userMapper = context.getBean("userMapper", UserMapperImpl.class);
+        List<User> list = userMapper.findUser();
+        for (User user : list) {
+            System.out.println(user);
+        }
+    }
+    
+      @Test
+    public void test3(){
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapperImpl2 userMapper = context.getBean("userMapper2", UserMapperImpl2.class);
+        List<User> list = userMapper.findUser();
+        for (User user : list) {
+            System.out.println(user);
+        }
+    }
+}
+
+```
+
+![image-20230422202809816](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422202809816.png)
+
+## 事务管理
+
+```
+什么是事务
+	把一组业务当成一个业务来做，要么都成功 要么都失败
+	事务在项目开发中 十分重要，涉及到数据的一致性问题
+	事务是用来确保数据的完整性和一致性的
+事务的ACID原则
+	原子性
+	一致性
+	隔离性
+		多个业务可能同时操作同一个资源，防止数据损坏
+	持久性
+		事务一旦提交，无论发生什么问题 结果都不会在被影响 数据会被持久化到存储器中
+为什么要使用事务
+	如果不配置事务 可能会存在数据提交不一致的情况
+	如果不在Spring中声明式配置事务 就需要手动在代码中配置事务
+	事务在开发中十分重要，涉及到数据的一致性和完整性问题
+```
+
+### Spring整合Mybatis
+
+#### 新建模块
+
+![image-20230422211645657](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422211645657.png)
+
+#### 添加依赖
+
+```xml
+ <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.46</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.9</version>
+        </dependency>
+        <!--spring支持 包含spring core  spring context等-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!--spring连接数据库 需要spring-jdbc包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>5.3.23</version>
+        </dependency>
+        <!--aop织入包-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>1.9.5</version>
+        </dependency>
+        <!--mybatis与spring整合包
+            mybatis 3.5以上 使用2.0+
+            3.5以下使用1.3
+        -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>2.0.7</version>
+        </dependency>
+        <!--自动添加getter setter等方法-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.26</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+```
+
+#### 创建User实体类
+
+```java
+package com.etjava.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class User {
+    private Integer id;
+    private String stuName;
+    private Integer age;
+
+    public User(String stuName, Integer age) {
+        this.stuName = stuName;
+        this.age = age;
+    }
+}
+
+```
+
+#### 创建User接口
+
+```
+package com.etjava.mapper;
+
+import com.etjava.model.User;
+
+import java.util.List;
+
+public interface UserMapper {
+    List<User> list();
+}
+
+```
+
+#### 创建接口映射文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.etjava.mapper.UserMapper">
+    <select id="list" resultType="User">
+        select * from t_student;
+    </select>
+</mapper>
+```
+
+#### 创建接口的实现类
+
+```java
+package com.etjava.mapper.impl;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.mybatis.spring.SqlSessionTemplate;
+
+import java.util.List;
+
+public class UserMapperImpl implements UserMapper {
+
+    // 我们之前所有的操作都是使用sqlSession 整合Sprign后都是使用SqlSessionTemplate
+    private SqlSessionTemplate sqlSession;
+
+
+    public void setSqlSession(SqlSessionTemplate sqlSession) {
+        this.sqlSession = sqlSession;
+    }
+
+    @Override
+    public List<User> list() {
+        UserMapper u = sqlSession.getMapper(UserMapper.class);
+        return u.list();
+    }
+}
+
+```
+
+
+
+#### 创建mybatis配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+  
+    <typeAliases>
+        <package name="com.etjava.model"/>
+    </typeAliases>
+    
+</configuration>
+```
+
+#### 创建spring与mybatis整合的配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!---->
+
+    <!--配置数据源  使用spring连接数据库 替换mybatis连接数据库
+        这里使用spring提供的jdbc
+        org.springframework.jdbc.datasource.DriverManagerDataSource
+    -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--注入连接属性-->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_mybatis?characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Karen@1234"/>
+    </bean>
+
+    <!--配置连接工厂  sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--绑定mybatis配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--配置mybatis的映射文件扫描-->
+        <property name="mapperLocations" value="classpath*:com/etjava/mapper/**/*.xml"/>
+    </bean>
+
+    <!--注入sqlSession   SqlSessionTemplate是spring提供的 用来连接数据库-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--只能使用构造器方式注入-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+</beans>
+```
+
+#### 创建Spring的配置文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--spring总配置文件 只需要注册bean就可以-->
+    <!--引入其他配置文件-->
+    <import resource="spring-mybatis.xml"/>
+
+
+    <!--测试使用SqlSessionDaoSupport 提供的直接获取sqlSession-->
+    <bean id="userMapper2" class="com.etjava.mapper.impl.UserMapperImpl">
+        <!--必须要注入sqlSessionFactory-->
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+</beans>
+```
+
+#### 测试
+
+```
+package com.etjava;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.mapper.impl.UserMapperImpl;
+import com.etjava.model.User;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper mapper = context.getBean("userMapper", UserMapper.class);
+        List<User> list = mapper.list();
+        for (User user : list) {
+            System.out.println(user);
+        }
+    }
+}
+
+```
+
+![image-20230422213020581](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422213020581.png)
+
+
+
+### 无事务控制
+
+#### 接口中新增添加和删除用户方法
+
+```java
+package com.etjava.mapper;
+
+import com.etjava.model.User;
+
+import java.util.List;
+
+public interface UserMapper {
+    List<User> list();
+
+    // 添加一个用户
+    void add(User user);
+    // 删除一个用户
+    int remove(int id);
+
+       void acid();
+}
+
+```
+
+#### 映射SQL
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.etjava.mapper.UserMapper">
+    <select id="list" resultType="User">
+        select * from t_student;
+    </select>
+
+    <insert id="add" parameterType="User">
+        insert into t_student values(null,#{stuName},#{age})
+    </insert>
+
+    <delete id="remove" parameterType="Integer">
+        delete from t_student where id=#{id}
+    </delete>
+</mapper>
+```
+
+#### UserServiceImpl实现两个方法
+
+```java
+package com.etjava.mapper.impl;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.SqlSessionTemplate;
+import org.mybatis.spring.support.SqlSessionDaoSupport;
+
+import java.util.List;
+
+public class UserMapperImpl extends SqlSessionDaoSupport implements UserMapper {
+
+
+    @Override
+    public List<User> list() {
+        SqlSession sqlSession = getSqlSession();
+        UserMapper u = sqlSession.getMapper(UserMapper.class);
+        return u.list();
+    }
+
+    @Override
+    public void add(User user) {
+        SqlSession sqlSession = getSqlSession();
+        UserMapper u = sqlSession.getMapper(UserMapper.class);
+        u.add(user);
+    }
+
+    @Override
+    public int remove(int id) {
+        SqlSession sqlSession = getSqlSession();
+        UserMapper u = sqlSession.getMapper(UserMapper.class);
+        return u.remove(id);
+    }
+
+    // 测试事务 该方法内的要么都成功要么都失败
+    public void acid(){
+        add(new User("999",22));
+        int i=1/0;
+        remove(100);
+    }
+}
+
+```
+
+#### 未做事务控制测试
+
+```java
+package com.etjava;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test2 {
+    public static void main(String[] args) {
+        // 测试未设置事务之前
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper userMapper = context.getBean("userMapper", UserMapper.class);
+        userMapper.acid();
+
+    }
+}
+
+```
+
+![image-20230422214435466](C:\Users\etjav\AppData\Roaming\Typora\typora-user-images\image-20230422214435466.png)
+
+### 有事务控制
+
+#### Spring中的事务管理
+
+```
+spring中提供了两类事务管理
+	编程式事务
+		自己写try catch 在加上rollback处理
+	声明式事务
+		AOP应用，对需要控制事务的方法配置事务织入
+```
+
+##### 配置声明式事务
+
+```xml
+1. 添加约束
+        xmlns:tx="http://www.springframework.org/schema/tx"
+        xsi:schemaLocation="http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd"
+2. 开启事务
+        <bean id="transactionManager" 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+      <constructor-arg ref="dataSource" />
+    </bean>
+3. 配置事务
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--给哪些方法配置事务  *表示所有方法 propagation 配置事务的传播特性 REQUIRED表示必须的-->
+        <!--
+            spring中七种事务的传播特性
+            REQUIRED 支持当前事务，如果当前没有事务就新建一个事务，这是Spring的默认选择
+            SUPPORTS 支持当前事务 如果当前没有事务 就以非事务方法执行
+            MANDATORY 支持当前事务 如果没有事务就抛出异常
+            REQUIRES_NEW 新建事务 如果当前存在事务 则把当前事务挂起
+            NOT_SUPPORTED 以非事务方式执行操作 如果当前存在事务 则把事务挂起
+            NEVER 以非事务方式执行操作，如果存在事务在抛出异常
+            NESTED 支持当前事务 如果事务存在则执行一个嵌套事务，如果不存在 就新建一个事务
+        -->
+        <tx:attributes>
+            <tx:method name="add" propagation="REQUIRED"/>
+            <tx:method name="delete" propagation="REQUIRED"/>
+            <tx:method name="select" propagation="REQUIRED"/>
+            <tx:method name="query" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+4. 配置事务切入
+	<!--配置事务切入-->
+    <aop:config>
+        <!--定义切入点  mapper包下的所有类的所有方法都添加上述事务-->
+        <aop:pointcut id="txPoint" expression="execution(* com.etjava.mapper.*.*(..))"/>
+        <!--切入事务-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
+    </aop:config>
+```
+
+完整配置
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!---->
+
+    <!--配置数据源  使用spring连接数据库 替换mybatis连接数据库
+        这里使用spring提供的jdbc
+        org.springframework.jdbc.datasource.DriverManagerDataSource
+    -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--注入连接属性-->
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/db_mybatis2?characterEncoding=utf-8"/>
+        <property name="username" value="root"/>
+        <property name="password" value="Karen@1234"/>
+    </bean>
+
+    <!--配置连接工厂  sqlSessionFactory-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <!--绑定mybatis配置文件-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <!--配置mybatis的映射文件扫描-->
+        <property name="mapperLocations" value="classpath*:com/etjava/mapper/**/*.xml"/>
+    </bean>
+
+    <!--注入sqlSession   SqlSessionTemplate是spring提供的 用来连接数据库-->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!--只能使用构造器方式注入-->
+        <constructor-arg index="0" ref="sqlSessionFactory"/>
+    </bean>
+
+    <!--配置声明式事务-->
+    <!--开启事务-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <constructor-arg ref="dataSource" />
+    </bean>
+
+    <!--AOP织入事务-->
+    <!--配置事务的类 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <!--给哪些方法配置事务  *表示所有方法 propagation 配置事务的传播特性 REQUIRED表示必须的-->
+        <!--
+            spring中七种事务的传播特性
+            REQUIRED 支持当前事务，如果当前没有事务就新建一个事务，这是Spring的默认选择
+            SUPPORTS 支持当前事务 如果当前没有事务 就以非事务方法执行
+            MANDATORY 支持当前事务 如果没有事务就抛出异常
+            REQUIRES_NEW 新建事务 如果当前存在事务 则把当前事务挂起
+            NOT_SUPPORTED 以非事务方式执行操作 如果当前存在事务 则把事务挂起
+            NEVER 以非事务方式执行操作，如果存在事务在抛出异常
+            NESTED 支持当前事务 如果事务存在则执行一个嵌套事务，如果不存在 就新建一个事务
+        -->
+        <tx:attributes>
+            <tx:method name="add" propagation="REQUIRED"/>
+            <tx:method name="delete" propagation="REQUIRED"/>
+            <tx:method name="select" propagation="REQUIRED"/>
+            <tx:method name="query" read-only="true"/>
+            <tx:method name="*" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <!--配置事务切入-->
+    <aop:config>
+        <!--定义切入点  mapper包下的所有类的所有方法都添加上述事务-->
+        <aop:pointcut id="txPoint" expression="execution(* com.etjava.mapper.*.*(..))"/>
+        <!--切入事务-->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
+    </aop:config>
+</beans>
+```
+
+测试
+
+```java
+package com.etjava;
+
+import com.etjava.mapper.UserMapper;
+import com.etjava.model.User;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test2 {
+    public static void main(String[] args) {
+        // 测试未设置事务之前
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserMapper userMapper = context.getBean("userMapper", UserMapper.class);
+        userMapper.acid();
+
+    }
+}
+
 ```
 
 
@@ -3465,54 +5739,6 @@ Spring的IOC核心理念
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-官方文档 1.4
-
-https://docs.spring.io/spring-framework/docs/5.2.23.RELEASE/spring-framework-reference/core.html#beans-c-namespace
 
 
 
